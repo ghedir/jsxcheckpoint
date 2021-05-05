@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./style.css";
+import "./App.css";
+import myInSrcimage from "./imageInSrc.jpg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div style={{ border: "solid 1px black", maxWidth: "100vw" }}>
+        <h1 className="title">Ghada Ghedir</h1>
+        <br />
+        <img src={myInSrcimage} alt="imageInSrc" />
+        <br />
+        <img src="/assets/imageInPublic.jpg" alt="myInPublic" />
+      </div>
+      <video style={{ width: "320", height: "240" }} controls>
+        <source src="/assets/myVideo.mp4" type="video/mp4" />
+      </video>
+    </>
   );
 }
 
